@@ -1,0 +1,126 @@
+body {
+	font-family: Cantarell, sans-serif;
+	background-color: black;
+	color: white;
+	margin: 0;
+}
+
+.topbar {
+	font-family: "JetBrains Mono", sans-serif;
+	font-weight: bold;
+	font-size: x-large;
+	
+	background-color: #007913;
+
+	display: flex;
+	flex-direction: row;
+	padding: 10px 0;
+
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.topbar-left {
+	flex-grow: 1;
+	margin-left: 10px;
+}
+
+.topbar-right {
+	margin: 0 10px;
+}
+
+.topbar-right a {
+	text-decoration: none;
+	color: white;
+}
+
+.big-img {
+	margin-top: 50px;
+	width: 100%;
+	object-fit: none;
+	object-position: center;
+}
+
+.main-content {
+	padding-top: 36px;
+	width: 60%;
+	margin: auto;
+}
+
+.card-box {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.card {
+	background-color: #0a430a;
+	width: 25%;
+	border-radius: 10px;
+	transition: 0.3s;
+	padding: 20px;
+	text-align: center;
+	margin: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+.card img {
+	border-radius: 10px;
+	width: 100%;
+	max-width: fit-content;
+}
+
+.card:hover {
+	background-color: #007913;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "JetBrains Mono", sans-serif;
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: auto;
+}
+
+p {
+	font-size: 14pt;
+}
+
+.title {
+	font-family: "JetBrains Mono", sans-serif;
+	font-size: 36pt;
+}
+
+/* Adjust for smaller screen sizes */
+@media only screen and (min-width: 1920px) {
+	.big-img { object-fit: cover; }
+}
+
+@media only screen and (max-width: 1050px) {
+	.card-box { flex-direction: column; align-items: center; }
+	.card { width: 85%; }
+}
+
+@media only screen and (max-width: 749px) {
+	.main-content { width: 90%; }
+	.big-img { margin-top: 81px;}
+	.topbar { flex-direction: column; }
+	.topbar-left, .topbar-right { text-align: center; }
+}
+
+@media only screen and (max-width: 559px) {
+	.title { font-size: 24pt; }
+}
+
+@media only screen and (max-width: 384px) {
+	.hideable { display: none; }
+}
+
+@media only screen and (max-width: 365px) {
+	.big-img { margin-top: 112px;}
+}
