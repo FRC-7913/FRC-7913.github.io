@@ -31,7 +31,7 @@ body {
 	margin: 0 10px;
 }
 
-.topbar-right a {
+.topbar-left a, .topbar-right a {
 	text-decoration: none;
 	color: white;
 }
